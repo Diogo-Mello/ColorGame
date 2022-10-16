@@ -1,0 +1,90 @@
+:root {
+    --cor1: #8995ff;
+    --cor2: #81ffa2;
+    --cor3: #ff7e83;
+    --cor4: #ffe176;
+
+    --cor1Forte: #001aff;
+    --cor2Forte: #00ff44;
+    --cor3Forte: #ff0008;
+    --cor4Forte: #ffc800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+#div1 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#div2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+#div3 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+#div4 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#color1, #color2, #color3, #color4 {
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+#color1 {
+    background-color: var(--cor1);
+    border-radius: 100% 0 0 0;
+}
+
+#color2 {
+    background-color: var(--cor2);
+    border-radius: 0 100% 0 0;
+}
+
+#color3 {  
+    background-color: var(--cor3);
+    border-radius: 0 0 0 100%;
+}
+
+#color4 {
+    background-color: var(--cor4);
+    border-radius: 0 0 100% 0;
+}
