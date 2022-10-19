@@ -209,3 +209,11 @@ function jogar () {
     acenderTudo();
     indexButton.innerHTML = ''
 }
+
+function play() {
+    color1.removeAttribute('onclick')
+    color2.removeAttribute('onclick')
+    color3.removeAttribute('onclick')
+    color4.removeAttribute('onclick')
+    errou()
+}

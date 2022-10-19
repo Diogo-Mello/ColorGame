@@ -1,3 +1,8 @@
+@font-face {
+    font-family: pressStart;
+    src: url('Fonte/press_start/PrStart.ttf') format('opentype'), url('Fonte/press_start/prstartk.ttf')format('embedded-opentype');
+}
+
 :root {
     --cor1: #8995ff;
     --cor2: #81ffa2;
@@ -11,6 +16,7 @@
 }
 
 * {
+    font-family: 'pressStart';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,14 +106,13 @@ main {
 }
 
 table {
-    margin: 2rem;
     text-align: center;
     color: white;
 }
 
-td {
-    width: 4rem;
-    padding-top: 1rem;
+th {
+    width: 5rem;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 992px) {
